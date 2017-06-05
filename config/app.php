@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        PhanAn\CascadingConfig\CascadingConfigServiceProvider::class,
 
         /*
          * Application Service Providers...
