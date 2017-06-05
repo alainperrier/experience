@@ -13,6 +13,7 @@ class LocalEnvironmentServiceProvider extends ServiceProvider
      */
     protected $localProviders = [
         'Barryvdh\Debugbar\ServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
     ];
 
     /**
