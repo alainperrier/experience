@@ -12,8 +12,10 @@ class LocalEnvironmentServiceProvider extends ServiceProvider
      * @var array
      */
     protected $localProviders = [
-        'Barryvdh\Debugbar\ServiceProvider',
-        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        \Barryvdh\Debugbar\ServiceProvider::class,
+        \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
+        \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
     ];
 
     /**
@@ -21,7 +23,7 @@ class LocalEnvironmentServiceProvider extends ServiceProvider
      * @var array
      */
     protected $facadeAliases = [
-        'Debugbar' => 'Barryvdh\Debugbar\Facade',
+        'Debugbar' => \Barryvdh\Debugbar\Facade::class,
     ];
 
     /**
